@@ -32,7 +32,7 @@ class Home extends Component {
             .then(response => response.json())
             .then(data => {
                 this.setState({
-                    itemsAll: data,
+                    itemsAll: data.item,
                     isLoaded: true,
                 })
             })
