@@ -44,7 +44,7 @@ class Home extends Component {
             //warunek jest po to, żeby fetch się zmieniał jeśli została wybrana opcja all to niech nie dodaje region, tylko opcje, żeby wyszło
             //https://restcountries.eu/rest/v2/all, a jeśli została wybrana jakakolwiek inna opcja to niech doda region i wybrana opcje, żeby
             //wyszło https://restcountries.eu/rest/v2/region/europe
-            fetch(`https://restcountries.eu/rest/v2/${this.state.option === "all" ? "" : "region/"}${this.state.option}`)
+            fetch(`https://mnrlive.github.io/api/resources.json?${this.state.option === "all" ? "" : "region/"}${this.state.option}`)
                 .then(response => {
                     if (response.ok) {
                         return response;
