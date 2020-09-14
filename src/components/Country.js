@@ -3,10 +3,10 @@ import { NavLink } from 'react-router-dom';
 import "../style/Country.scss";
 
 const Country = (props) => {
-        const borders = props.items.map((item, index) => (
+        const borders = props.borders.map((answer, index) => (
         <li className="borders-item" key={index}>
-            <NavLink to={item.answer} className="navLink">
-                <button className="btn btn--borders">{item.answer}</button>
+            <NavLink to={answer} className="navLink">
+                <button className="btn btn--borders">{answer}</button>
             </NavLink>
         </li>
     ))
