@@ -56,7 +56,7 @@ class Home extends Component {
                 .then(data => {
                     this.setState({
                         filtered: "", //wyczysc tablice filtered, jesli jest ona pusta to wyswietla sie wszystkie opcje z danej kategorii (wiaze sie z inputem, czyli jesli wybiore jakas opcje to wyzeruj tablice filtered i wartosc z input)
-                        itemsAll: data,
+                        itemsAll: data.item,
                         isLoaded: true,
                     })
                 })
