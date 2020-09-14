@@ -52,8 +52,8 @@ class App extends Component {
   render() {
     const routeItems = this.state.itemsAll.map((item, index) => (
       <Route exact path={`/${item.alpha3Code}`} key={index}
-        render={() => <main className="main main--country"><Item itemsAll={this.state.itemsAll} flag={item.flag} name={item.name} nativeName={item.nativeName} population={item.population}
-          region={item.region} subRegion={item.subregion} capital={item.capital} topLevelDomain={item.topLevelDomain} currencies={item.currencies} languages={item.languages} borders={item.borders} alpha3Code={item.alpha3Code}
+        render={() => <main className="main main--country"><Item itemsAll={this.state.itemsAll} flag={itemsAll.flag} name={itemsAll.name} nativeName={itemsAll.nativeName} population={itemsAll.population}
+          region={itemsAll.region} subRegion={itemsAll.subregion} capital={itemsAll.capital} topLevelDomain={itemsAll.topLevelDomain} currencies={itemsAll.currencies} languages={itemsAll.languages} borders={itemsAll.borders} alpha3Code={itemsAll.alpha3Code}
         /></main>} //zeby country wyswietlalo odpowiednie panstwo zwiazane z linkiem
       />
     ))
