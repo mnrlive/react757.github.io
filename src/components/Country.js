@@ -39,6 +39,7 @@ const Country = (props) => {
                     <ul className="info-list info-list--partThree">
                         <ul className="info-list__borders">
                             <h4>Border Countries:</h4>
+                                 {props.Borders}
                            
                         </ul>
                     </ul>
