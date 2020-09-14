@@ -24,12 +24,12 @@ class App extends Component {
   */
 
   state = {
-    countriesAll: [],
+    itemsAll: [],
   }
 
 
   componentDidMount() {
-    fetch('https://restcountries.eu/rest/v2/all')
+    fetch('https://mnrlive.github.io/api/resources.json')
       .then(response => {
         if (response.ok) {
           return response;
@@ -41,7 +41,7 @@ class App extends Component {
       .then(response => response.json())
       .then(data => {
         this.setState({
-          countriesAll: data,
+          itemsAll: data,
         })
       })
       .catch(error => console.log(error));
@@ -50,10 +50,10 @@ class App extends Component {
 
 
   render() {
-    const routeCountries = this.state.countriesAll.map((country, index) => (
-      <Route exact path={`/${country.alpha3Code}`} key={index}
-        render={() => <main className="main main--country"><Country countryAll={this.state.countriesAll} flag={country.flag} name={country.name} nativeName={country.nativeName} population={country.population}
-          region={country.region} subRegion={country.subregion} capital={country.capital} topLevelDomain={country.topLevelDomain} currencies={country.currencies} languages={country.languages} borders={country.borders} alpha3Code={country.alpha3Code}
+    const routeItems = this.state.itemsAll.map((item, index) => (
+      <Route exact path={`/${item.alpha3Code}`} key={index}
+        render={() => <main className="main main--country"><Item itemsAll={this.state.itemsAll} flag={item.flag} name={item.name} nativeName={item.nativeName} population={item.population}
+          region={item.region} subRegion={item.subregion} capital={item.capital} topLevelDomain={item.topLevelDomain} currencies={item.currencies} languages={item.languages} borders={item.borders} alpha3Code={item.alpha3Code}
         /></main>} //zeby country wyswietlalo odpowiednie panstwo zwiazane z linkiem
       />
     ))
