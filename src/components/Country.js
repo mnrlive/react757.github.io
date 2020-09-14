@@ -5,15 +5,6 @@ import "../style/Country.scss";
 const Country = (props) => {
 
     
-
-    const borders = props.borders.map((border, index) => (
-        <li className="borders-item" key={index}>
-            <NavLink to={border} className="navLink">
-                <button className="btn btn--borders">{border}</button>
-            </NavLink>
-        </li>
-    ))
-
     return (
         <div className="country-container">
             <div className="country-container__back">
@@ -48,7 +39,7 @@ const Country = (props) => {
                     <ul className="info-list info-list--partThree">
                         <ul className="info-list__borders">
                             <h4>Border Countries:</h4>
-                            {borders}
+                           
                         </ul>
                     </ul>
                 </div>
