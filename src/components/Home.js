@@ -8,7 +8,6 @@ class Home extends Component {
         isLoaded: false,
         option: "all",
         optionUpper: "",
-        searchValue: "",
         filtered: "",
         filterActive: false,
         regionChoosed: false,
@@ -57,7 +56,6 @@ class Home extends Component {
                 .then(data => {
                     this.setState({
                         filtered: "", //wyczysc tablice filtered, jesli jest ona pusta to wyswietla sie wszystkie opcje z danej kategorii (wiaze sie z inputem, czyli jesli wybiore jakas opcje to wyzeruj tablice filtered i wartosc z input)
-                        searchValue: "", //w celu wyczyszczenia inputa wyszukiwania, przy zmianie regionu
                         itemsAll: data,
                         isLoaded: true,
                     })
@@ -85,7 +83,7 @@ class Home extends Component {
         }
     }
 
-  
+    
 
     //Toggle, jesli uzytkownik kliknie na Filter By Region to niech filter activ zmieni sie na true, jesli kliknie ponownie to na false
     handleFilterRegion = () => {
@@ -121,6 +119,7 @@ class Home extends Component {
             <div className='home' onClick={this.handleCloseGlobalFilterRegion}>
                 <div className="filter">
                     
+
                     <div className="filter__selectPanel">
                         <NavLink to="./">
                             <span onClick={this.handleFilterRegion} className={this.state.filterActive ? "filter__chooseRegion filter__chooseRegion--caretUp" : "filter__chooseRegion filter__chooseRegion--caretDown"}>{this.state.regionChoosed ? this.state.optionUpper : "Filter by Region"}</span>
