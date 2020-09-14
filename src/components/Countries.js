@@ -5,7 +5,7 @@ import { populationDotted } from "./Functions";
 
 const Countries = (props) => {
 
-    const countries = props.itemsAll.map((country, index) => (
+    const countries = props.itemsAll.map((item, index) => (
 
         <NavLink to={item.alpha3Code} className="navLink" key={index}>
             {/* country.cioc ? country.cioc : country.name - jesli ma cioc to uzywaj w celu dobrego linkowanie z borderami, ktore posluguja sie skrotami, a cioc to skrot */}
