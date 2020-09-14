@@ -8,7 +8,7 @@ const Countries = (props) => {
         
         
         <Link to= {{ pathname: `/recipe/${item.answer}`,
-                  state: {item: item.answer  } }} > </Link>
+                  state: {item: item.answer  } }} > 
 
        
             <div className="countryCard" key={index}>
@@ -25,7 +25,7 @@ const Countries = (props) => {
                 </div>
 
             </div>
-        
+        </Link>
     ))
     return (
         <>
