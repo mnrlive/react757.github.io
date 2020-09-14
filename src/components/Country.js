@@ -20,7 +20,7 @@ const Country = (props) => {
             </div>
             <div className="country-details">
                 <div className="country-details__flag">
-                    <img className={`country-details__flagImg country-details__flagImg--${props.alpha3Code}`} src={props.flag} alt={`${props.name} flag`} />
+                    <img className={`country-details__flagImg country-details__flagImg--${props.alpha3Code}`} src={props.flag} alt= {props.name} />
                 </div>
                 <div className="country-details__info">
                     <h1 className="country-details__headingPrimary">{props.name}</h1>
