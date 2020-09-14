@@ -11,10 +11,10 @@ const Countries = (props) => {
             {/* badz sposob z alpha3Code zeby bylo zgodne z linkami z border, np border IRN to w alpha3Code Iranu tez IRN, ale juz cioc to IRI wiec linki sa sprzeczne, kilka jest takich wyjatkow, alpha3Code===border */}
             <div className="countryCard" key={index}>
                 <div className="countryCard__flag">
-                    <img className={`countryCard__flagImg countryCard__flagImg--${item.alpha3Code}`} src={item.flag} alt={`${item.name} flag`} />
+                    <img className={`countryCard__flagImg countryCard__flagImg--${item.alpha3Code}`} src={item.image alt={`${item.question} flag`} />
                 </div>
                 <div className="countryCard__description">
-                    <h1 className="countryCard__primary">{item.name}</h1>
+                    <h1 className="countryCard__primary">{item.question}</h1>
                     <ul className="countryCard__itemList">
                         <li className="countryCard__item"><span>Population: </span> population </li>
                         <li className="countryCard__item"><span>Region: </span>{item.region}</li>
