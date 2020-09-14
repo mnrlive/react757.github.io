@@ -85,24 +85,7 @@ class Home extends Component {
         }
     }
 
-    handleSearchCountry = (e) => {
-        this.setState({
-            searchValue: e.target.value,
-        })
-        let actualCountriesList = []; //aktualna lista krajów
-        let newCountriesList = []; //nowa lista, którą następnie będzie tablica filtered
-        if (e.target.value !== "") {//jeśli zostało coś wpisane
-            actualCountriesList = this.state.itemsAll; //aktualna lista krajów równa się tablicy krajów z api (mogą być z wszystkich krajów, bądź jeśli została wybrana jakaś opcja z danego regionu)
-            newCountriesList = actualCountriesList.filter(country => { //filtrowanie, jeśli jakiś kraj zawiera wpisaną frazę to go zwróć, toLowerCase() jest zastosowane, żeby porównywany kraj i wartość z inputa miały małe litery, żeby nie wystąpił konflikt
-                return country.name.toLowerCase().includes(e.target.value.toLocaleLowerCase());
-            })
-        } else {
-            newCountriesList = this.state.itemsAll; //jeśli nic nie zostało wpisane to nowa lista posiada wartość z api
-        }
-        this.setState({
-            filtered: newCountriesList, //tablica filtered ma teraz wartość newCountriesList, czyli nowej tablicy
-        });
-    }
+  
 
     //Toggle, jesli uzytkownik kliknie na Filter By Region to niech filter activ zmieni sie na true, jesli kliknie ponownie to na false
     handleFilterRegion = () => {
@@ -137,14 +120,7 @@ class Home extends Component {
         return (
             <div className='home' onClick={this.handleCloseGlobalFilterRegion}>
                 <div className="filter">
-                    <div className="filter__searchPanel">
-                        <svg className="filter__icon" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
-                            <title>magnifying-glass</title>
-                            <path d="M17.545 15.467l-3.779-3.779c0.57-0.935 0.898-2.035 0.898-3.21 0-3.417-2.961-6.377-6.378-6.377s-6.186 2.769-6.186 6.186c0 3.416 2.961 6.377 6.377 6.377 1.137 0 2.2-0.309 3.115-0.844l3.799 3.801c0.372 0.371 0.975 0.371 1.346 0l0.943-0.943c0.371-0.371 0.236-0.84-0.135-1.211zM4.004 8.287c0-2.366 1.917-4.283 4.282-4.283s4.474 2.107 4.474 4.474c0 2.365-1.918 4.283-4.283 4.283s-4.473-2.109-4.473-4.474z"></path>
-                        </svg>
-                        <input className="filter__searchInput" type="text" placeholder="Search for a country..." value={this.state.searchValue} onChange={this.handleSearchCountry} />
-                    </div>
-
+                    
                     <div className="filter__selectPanel">
                         <NavLink to="./">
                             <span onClick={this.handleFilterRegion} className={this.state.filterActive ? "filter__chooseRegion filter__chooseRegion--caretUp" : "filter__chooseRegion filter__chooseRegion--caretDown"}>{this.state.regionChoosed ? this.state.optionUpper : "Filter by Region"}</span>
