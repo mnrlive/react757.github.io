@@ -67,7 +67,7 @@ class App extends Component {
               <Switch>
                 <Route exact path="/" render={() => <main className="main main--home"><Home /> </main>}
                 />
-                {routeCountries}
+                {routeItems}
                 <Route render={() => <main className="main main--error"><WrongPage /></main>}
                 />
               </Switch>
