@@ -32,8 +32,12 @@ const Country = (props) => {
                     <ul className="info-list info-list--partThree">
                         <ul className="info-list__borders">
                             <h4>Border Countries:</h4>
+                               <li className="borders-item" key={index}>
+            <NavLink to={{props.borders}} className="navLink">
+                <button className="btn btn--borders">{{props.borders}}</button>
+            </NavLink>
+        </li>
                                 
-{topLevelDomain}
 
                                     
                            
