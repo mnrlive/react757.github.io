@@ -22,17 +22,8 @@ const Country = (props) => {
                         <li className="info-item info-item--nativeName">
                             <h4 className="country-details__headingQuaternary">Native Name:</h4>{props.nativeName}
                         </li>
+                       
                         
-                      
-                        <li className="info-item">
-                            <h4 className="country-details__headingQuaternary">Region:</h4>{props.region}
-                        </li>
-                        <li className="info-item">
-                            <h4 className="country-details__headingQuaternary">Sub Region:</h4>{props.subRegion}
-                        </li>
-                        <li className="info-item">
-                            <h4 className="country-details__headingQuaternary">Capital:</h4>{props.capital}
-                        </li>
                     </ul>
                     
                     <ul className="info-list info-list--partThree">
