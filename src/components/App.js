@@ -53,7 +53,7 @@ class App extends Component {
     const routeItems = this.state.itemsAll.map((item, index) => (
       <Route exact path={`/${item.answer}`} key={index}
         render={() => <main className="main main--country"><Country itemsAll={this.state.itemsAll} flag={item.image} name={item.question} 
-         borders={item.answer} alpha3Code={item.answer}
+         borders={item.borders} alpha3Code={item.answer}
         /></main>} //zeby country wyswietlalo odpowiednie panstwo zwiazane z linkiem
       />
     ))
