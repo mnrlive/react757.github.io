@@ -7,7 +7,7 @@ const Country = (props) => {
     
     
 
-    const borders = props.borders.map((border, index) => (
+    const borders = props.borders.map((item, index) => (
         <li className="borders-item" key={index}>
             <NavLink to={border} className="navLink">
                 <button className="btn btn--borders">{border}</button>
