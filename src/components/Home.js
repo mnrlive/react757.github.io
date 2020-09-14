@@ -20,7 +20,7 @@ class Home extends Component {
         //Nasłuchiwanie scrolla, który umożliwi powrót na początek strony
         window.addEventListener('scroll', this.scrollCheck, false);
 
-        fetch('https://restcountries.eu/rest/v2/all')
+        fetch('https://mnrlive.github.io/api/resources.json')
             .then(response => {
                 if (response.ok) {
                     return response;
