@@ -4,9 +4,7 @@ import "../style/Country.scss";
 
 const Country = (props) => {
        
-        const topLevelDomain = props.topLevelDomain.map((answer, index) => (
-        <li className="info-item" key={index}>{answer}</li>
-    ))
+       
     return (
         <div className="country-container">
             <div className="country-container__back">
@@ -36,7 +34,7 @@ const Country = (props) => {
             <NavLink to= {props.borders} className="navLink">
                 <button className="btn btn--borders">{props.borders}</button>
             </NavLink>
-        </li>
+                               </li>
                                 
 
                                     
