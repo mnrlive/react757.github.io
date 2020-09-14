@@ -6,7 +6,7 @@ const Countries = (props) => {
 
     const countries = props.itemsAll.map((item, index) => (
 
-        <NavLink to={item.alpha3Code} className="navLink" key={index}>
+        <NavLink to={item.answer} className="navLink" key={index}>
             {/* country.cioc ? country.cioc : country.name - jesli ma cioc to uzywaj w celu dobrego linkowanie z borderami, ktore posluguja sie skrotami, a cioc to skrot */}
             {/* badz sposob z alpha3Code zeby bylo zgodne z linkami z border, np border IRN to w alpha3Code Iranu tez IRN, ale juz cioc to IRI wiec linki sa sprzeczne, kilka jest takich wyjatkow, alpha3Code===border */}
             <div className="countryCard" key={index}>
