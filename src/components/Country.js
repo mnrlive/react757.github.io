@@ -3,14 +3,7 @@ import { NavLink } from 'react-router-dom';
 import "../style/Country.scss";
 
 const Country = (props) => {
-        const borders = props.borders.map(( answer, index) => (
-        <li className="borders-item" key={index}>
-            <NavLink to= {answer} className="navLink">
-                <button className="btn btn--borders"> {answer} </button>
-            </NavLink>
-        </li>
-    ))
-        
+       
         const topLevelDomain = props.topLevelDomain.map((answer, index) => (
         <li className="info-item" key={index}>{answer}</li>
     ))
@@ -39,7 +32,7 @@ const Country = (props) => {
                     <ul className="info-list info-list--partThree">
                         <ul className="info-list__borders">
                             <h4>Border Countries:</h4>
-                                {borders}
+                                
 {topLevelDomain}
 
                                     
