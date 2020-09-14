@@ -15,10 +15,10 @@ const Country = (props) => {
             </div>
             <div className="country-details">
                 <div className="country-details__flag">
-                    <img className= "country-details__flagImg"  src={props.image} alt={`${props.question} flag`} />
+                    <img className= "country-details__flagImg"  src={props.item.image} alt={`${props.item.question} flag`} />
                 </div>
                 <div className="country-details__info">
-                    <h1 className="country-details__headingPrimary">{props.question}</h1>
+                    <h1 className="country-details__headingPrimary">{props.item.question}</h1>
                     <ul className="info-list info-list--partOne">
                         
                         <li className="info-item">
