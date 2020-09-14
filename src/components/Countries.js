@@ -7,8 +7,8 @@ const Countries = (props) => {
     const countries = props.itemsAll.map((item, index) => (
         
         
-        <Link to={{ pathname: `/recipe/${item.answer}`,
-                  state: {item.answer} }}>
+        <Link to= {{ pathname: `/recipe/${item.answer}`,
+                  state: { item.answer } }} > </Link>
 
        
             <div className="countryCard" key={index}>
@@ -25,7 +25,7 @@ const Countries = (props) => {
                 </div>
 
             </div>
-        </Link>
+        
     ))
     return (
         <>
