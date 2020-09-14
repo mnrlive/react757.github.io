@@ -58,7 +58,7 @@ class App extends Component {
       />
     ))
     return (
-      <Router basename={process.env.PUBLIC_URL}>
+      <Router>
         <>
           <div className="App">
             <div className="container">
