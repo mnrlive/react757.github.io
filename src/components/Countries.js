@@ -17,7 +17,7 @@ const Countries = (props) => {
                 <div className="countryCard__description">
                     <h1 className="countryCard__primary">{item.name}</h1>
                     <ul className="countryCard__itemList">
-                        <li className="countryCard__item"><span>Population: </span>{populationDotted(country.population)}</li>
+                        <li className="countryCard__item"><span>Population: </span>{populationDotted(item.population)}</li>
                         <li className="countryCard__item"><span>Region: </span>{item.region}</li>
                         <li className="countryCard__item"><span>Capital: </span>{item.capital}</li>
                     </ul>
