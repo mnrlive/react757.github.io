@@ -8,9 +8,9 @@ const Country = (props) => {
     return (
         <div className="country-container">
             <div className="country-container__back">
-                <NavLink to="/" className="navLink">
+                <Link to="/" className="navLink">
                     <button className="btn country-container__button-back">Back</button>
-                </NavLink>
+                </Link>
 
             </div>
             <div className="country-details">
