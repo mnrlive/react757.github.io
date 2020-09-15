@@ -17,8 +17,7 @@ const Countries = (props) => {
                 </div>
                 <div className="countryCard__description">
                     <h1 className="countryCard__primary">{item.question}</h1>
-                    <ul className="countryCard__itemList">
-                        <li className="countryCard__item"><span>Population: </span> population </li>
+                    
                        
                         
                     </ul>
