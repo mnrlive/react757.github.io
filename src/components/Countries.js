@@ -20,7 +20,7 @@ const Countries = (props) => {
                     
                        
                         
-                    </ul>
+                    
                 </div>
 
             </div>
