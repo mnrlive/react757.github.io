@@ -45,51 +45,6 @@
         object-fit: cover;
         object-position: center;
 
-        &--TKL,
-        &--TUV,
-        &--ASM,
-        &--AIA,
-        &--CXR,
-        &--COK,
-        &--GLP,
-        &--MTQ,
-        &--MNG,
-        &--MNE,
-        &--MSR,
-        &--NPL,
-        &--NZL,
-        &--SHN,
-        &--SPM,
-        &--SLB,
-        &--SGS,
-        &--LKA,
-        &--TKM,
-        &--TCA,
-        &--VGB,
-        &--COM,
-        &--CUB,
-        &--ERI,
-        &--FLK,
-        &--MHL {
-            object-fit: fill;
-        }
-
-        &--BLR,
-        &--ZWE,
-        &--UZB,
-        &--TLS,
-        &--LBR,
-        &--NIU,
-        &--OMN,
-        &--SSD {
-            object-position: left;
-        }
-
-        &--CHN,
-        &--MLT,
-        &--CAF {
-            object-position: top;
-        }
     }
 
     &__description {
