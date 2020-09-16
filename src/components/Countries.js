@@ -7,7 +7,7 @@ const Countries = (props) => {
     const countries = props.itemsAll.map((item, index) => (
         
         
-        <Link to= {{ pathname: `/recipe/${item.answer}`,
+        <Link to= {{ pathname: `/${item.answer}`,
                   state: {item: item.answer  } }} > 
 
        
