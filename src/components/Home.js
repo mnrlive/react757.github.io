@@ -126,16 +126,20 @@ class Home extends Component {
                             <ul className={this.state.filterActive ? "filter__dropdown visible" : "filter__dropdown"}>
                                 <li className="filter__dropdown-item filter__dropdown-item--all" value="all"
                                     onClick={this.handleChangeRegion}>All</li>
-                                <li className="filter__dropdown-item filter__dropdown-item--africa" value="africa"
-                                    onClick={this.handleChangeRegion}>Africa</li>
-                                <li className="filter__dropdown-item filter__dropdown-item--americas" value="americas"
-                                    onClick={this.handleChangeRegion}>Americas</li>
-                                <li className="filter__dropdown-item filter__dropdown-item--asia" value="asia"
-                                    onClick={this.handleChangeRegion}>Asia</li>
-                                <li className="filter__dropdown-item filter__dropdown-item--europe" value="europe"
-                                    onClick={this.handleChangeRegion}>Europe</li>
-                                <li className="filter__dropdown-item filter__dropdown-item--oceania" value="oceania"
-                                    onClick={this.handleChangeRegion}>Oceania</li>
+                                <li className="filter__dropdown-item filter__dropdown-item--africa" value="World"
+                                    onClick={this.handleChangeRegion}>World</li>
+                                <li className="filter__dropdown-item filter__dropdown-item--americas" value="Business"
+                                    onClick={this.handleChangeRegion}>Business</li>
+                                <li className="filter__dropdown-item filter__dropdown-item--asia" value="Technology"
+                                    onClick={this.handleChangeRegion}>Technology</li>
+                                <li className="filter__dropdown-item filter__dropdown-item--europe" value="Entertainment"
+                                    onClick={this.handleChangeRegion}>Entertainment</li>
+                                <li className="filter__dropdown-item filter__dropdown-item--oceania" value="Sports"
+                                    onClick={this.handleChangeRegion}>Sports</li>
+                                <li className="filter__dropdown-item filter__dropdown-item--oceania" value="Science"
+                                    onClick={this.handleChangeRegion}>Science</li>
+                                <li className="filter__dropdown-item filter__dropdown-item--oceania" value="Health"
+                                    onClick={this.handleChangeRegion}>Health</li>
                             </ul>
                         </NavLink>
                     </div>
