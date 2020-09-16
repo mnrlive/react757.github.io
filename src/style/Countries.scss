@@ -19,7 +19,7 @@
 
 .countryCard {
     display: grid;
-    grid-template-rows: repeat(2, minmax(10rem, 10rem));
+    grid-template-rows: repeat(2, minmax(10rem, 13rem));
     border-radius: 1%;
     overflow: hidden;
     background-color: $white;
