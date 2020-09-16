@@ -25,8 +25,6 @@ const Country = (props) => {
                         </li>
                        
                         
-                    </ul>
-                    
                     
                                <li className="borders-item" >
             <Link to= {props.borders} className="navLink">
