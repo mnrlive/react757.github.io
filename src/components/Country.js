@@ -33,7 +33,7 @@ const Country = (props) => {
                                </li>
                                 
 
-                                    
+                           </ul>         
                    
                     
                 </div>
